@@ -4,7 +4,7 @@ add scholarship
 """
 from data import scholarships
 
-def get_info():
+def add_scholarship():
     """
     add scholarship menu
     """
