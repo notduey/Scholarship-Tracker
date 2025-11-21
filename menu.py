@@ -19,9 +19,10 @@ def main_menu():
     main menu that gives user to add, view/edit scholarships, or exit program"""
     while True:
         display_main_menu()
-        choice = input("Enter your choice:").strip()
+        choice = input("Enter your choice: ").strip()
+        print()
         if choice not in ["1", "2", "3"]:
-            print("Invalid choice. Enter 1, 2, or, 3.")
+            print("Invalid choice. Enter 1, 2, or, 3.\n")
             continue #continue goes back to the start of the while loop
 
         if choice == "1":
@@ -29,5 +30,5 @@ def main_menu():
         elif choice == "2":
             manage_scholarship()
         elif choice == "3":
-            print("exiting program")
+            print("Saving and exiting program...")
             break #break ends the while loop
